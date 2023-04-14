@@ -4,6 +4,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MeresItemAdapter extends RecyclerView.Adapter<MeresItemAdapter.VH> {
+public class MeresItemAdapter extends RecyclerView.Adapter<MeresItemAdapter.VH>{
 
     private ArrayList<MeresItem> meresData;
     private ArrayList<MeresItem> meresItemDataAll;
@@ -34,7 +36,7 @@ public class MeresItemAdapter extends RecyclerView.Adapter<MeresItemAdapter.VH> 
     public void onBindViewHolder(@NonNull VH holder, int position) {
         MeresItem current = meresData.get(position);
 
-        holder.bindTo(current)
+        holder.bindTo(current);
     }
 
     @Override
@@ -53,6 +55,10 @@ public class MeresItemAdapter extends RecyclerView.Adapter<MeresItemAdapter.VH> 
         }
 
         public void bindTo(MeresItem current) {
+            SYSTOLE.setText(current.getSys());
+            DIASTOLE.setText(current.getDia());
+            PULSE.setText(current.getPulse());
+
         }
     }
 }
