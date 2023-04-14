@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_canonical_name">Vérnyomásnapló app</string>
+    <string name="email_address">E-mail cím</string>
+    <string name="password">Jelszó</string>
+    <string name="login_button_text">Bejelentkezés</string>
+    <string name="register_button_text">Regisztráció</string>
+    <string name="SYS">SYS</string>
+    <string name="DIA">DIA</string>
+    <string name="PULSE">PULSE</string>
+    <string name="meres_torles">Mérés törlése</string>
+    <string name="meres_modositas">Mérés módosítása</string>
+</resources>

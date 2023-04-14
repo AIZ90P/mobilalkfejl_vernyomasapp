@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "161754661693",
+    "project_id": "vernyomasnaploapp",
+    "storage_bucket": "vernyomasnaploapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161754661693:android:48cc02f8655c2ca54f3b54",
+        "android_client_info": {
+          "package_name": "hu.zana.mobilalkfejl_vernyomasapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161754661693-cl5h6gmlareda32i23bp6kcjeioc5fik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hu.zana.mobilalkfejl_vernyomasapp",
+            "certificate_hash": "5db41f335c78a7bb76ee7d0d7634e9ab25fb8cac"
+          }
+        },
+        {
+          "client_id": "161754661693-q7bt7pdbmu1quubo7948et96ldod8plj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4xzlE0yaCNnSIurj0t_LhFbJ8pz5Smc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161754661693-q7bt7pdbmu1quubo7948et96ldod8plj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
