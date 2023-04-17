@@ -8,17 +8,29 @@
     tools:context=".VernyomasnaploLista">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp" />
+        android:layout_marginTop="@dimen/spacing_between_label_control"
+        android:text="Mérési eredmények"
+        android:textColor="@color/App_main"
+        android:textSize="@dimen/title_label_fontsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/recyclerMargin"
+        android:layout_marginTop="@dimen/recyclerMargin"
+        android:layout_marginEnd="@dimen/recyclerMargin"
+        android:layout_marginBottom="@dimen/recyclerMargin"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

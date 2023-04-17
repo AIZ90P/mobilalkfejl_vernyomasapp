@@ -8,6 +8,9 @@
     <string name="SYS">SYS</string>
     <string name="DIA">DIA</string>
     <string name="PULSE">PULSE</string>
-    <string name="meres_torles">Mérés törlése</string>
-    <string name="meres_modositas">Mérés módosítása</string>
+    <string name="meres_torles">Törlés</string>
+    <string name="meres_modositas">Módosítás</string>
+    <string name="MeresBevitel_title">Új mérés</string>
+    <string name="meres_bevitel">Bevitel</string>
+    <string name="MeresModositas_title">Módosítás</string>
 </resources>

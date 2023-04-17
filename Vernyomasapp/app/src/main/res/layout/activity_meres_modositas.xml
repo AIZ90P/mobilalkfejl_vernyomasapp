@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MeresBevitel">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/MeresModositas_title"
+        android:textAlignment="center"
+        android:textColor="@color/App_main"
+        android:textSize="@dimen/title_label_fontsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias=".4">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/SYS_LABEL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_between_label_control"
+                android:text="@string/SYS"
+                android:textColor="@color/App_main"
+                android:textSize="@dimen/label_fontsize" />
+
+            <EditText
+                android:id="@+id/SYS_DATA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_between_label_control"
+                android:ems="10"
+                android:hint="@string/SYS"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/App_secondary"
+                android:textColorHint="@color/App_hints" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/DIA_LABEL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_between_label_control"
+                android:text="@string/DIA"
+                android:textColor="@color/App_main"
+                android:textSize="@dimen/label_fontsize" />
+
+            <EditText
+                android:id="@+id/DIA_DATA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_between_label_control"
+                android:ems="10"
+                android:hint="@string/DIA"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/App_secondary"
+                android:textColorHint="@color/App_hints" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/PULSE_LABEL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_between_label_control"
+                android:text="@string/PULSE"
+                android:textColor="@color/App_main"
+                android:textSize="@dimen/label_fontsize" />
+
+            <EditText
+                android:id="@+id/PULSE_DATA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_between_label_control"
+                android:ems="10"
+                android:hint="@string/PULSE"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/App_secondary"
+                android:textColorHint="@color/App_hints" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_between_button_button"
+        android:backgroundTint="#03A9F4"
+        android:text="@string/meres_modositas"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

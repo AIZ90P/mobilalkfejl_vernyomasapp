@@ -2,4 +2,5 @@
 <resources>
     <color name="App_main">#9C27B0</color>
     <color name="App_secondary">#2196F3</color>
+    <color name="App_hints">#00BCD4</color>
 </resources>

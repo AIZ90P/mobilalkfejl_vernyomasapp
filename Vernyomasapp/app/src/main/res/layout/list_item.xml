@@ -9,6 +9,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/datum_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="DATUM" />
+
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,7 +107,7 @@
                 android:text="@string/meres_torles" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/item_modositas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

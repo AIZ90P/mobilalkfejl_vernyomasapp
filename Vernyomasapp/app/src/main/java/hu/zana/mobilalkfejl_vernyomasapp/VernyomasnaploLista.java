@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
@@ -55,7 +56,7 @@ public class VernyomasnaploLista extends AppCompatActivity {
     private void QueryData(){
         mItemList.clear();
 
-        mItems.get().addOnSuccessListener(queryDocumentSnapshots ->  {
+        mItems.orderBy("date", Query.Direction.DESCENDING).get().addOnSuccessListener(queryDocumentSnapshots ->  {
             for(QueryDocumentSnapshot doc : queryDocumentSnapshots){
                 MeresItem item = doc.toObject(MeresItem.class);
                 mItemList.add(item);

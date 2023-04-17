@@ -46,19 +46,21 @@ public class MeresItemAdapter extends RecyclerView.Adapter<MeresItemAdapter.VH>{
         private TextView SYSTOLE;
         private TextView DIASTOLE;
         private TextView PULSE;
+        private TextView DATUM;
         public VH(@NonNull View itemView) {
             super(itemView);
 
             SYSTOLE = itemView.findViewById(R.id.SYSTOLE_DATA);
             DIASTOLE = itemView.findViewById(R.id.DIASTOLE_DATA);
             PULSE = itemView.findViewById(R.id.PULSE_DATA);
+            DATUM = itemView.findViewById(R.id.datum_label);
         }
 
         public void bindTo(MeresItem current) {
             SYSTOLE.setText(current.getSys());
             DIASTOLE.setText(current.getDia());
             PULSE.setText(current.getPulse());
-
+            DATUM.setText(current.getDate());
         }
     }
 }

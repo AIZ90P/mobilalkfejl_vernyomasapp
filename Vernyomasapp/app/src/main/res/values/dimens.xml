@@ -6,4 +6,5 @@
     <dimen name="spacing_between_button_button">10dp</dimen>
     <dimen name="label_fontsize">16sp</dimen>
     <dimen name="title_label_fontsize">36sp</dimen>
+    <dimen name="recyclerMargin">10dp</dimen>
 </resources>

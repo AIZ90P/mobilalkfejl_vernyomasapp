@@ -1,5 +1,9 @@
 package hu.zana.mobilalkfejl_vernyomasapp;
 
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+
+import com.google.firebase.firestore.DocumentId;
+
 import java.util.Date;
 
 public class MeresItem {
@@ -7,6 +11,9 @@ public class MeresItem {
     private String dia;
     private String pulse;
     private String date;
+
+    @DocumentId
+    private String docid;
 
     public MeresItem() {}
 
@@ -24,4 +31,6 @@ public class MeresItem {
     public String getPulse() {return pulse;}
 
     public String getDate() {return date;}
+
+    public String getDocid() {return docid;}
 }
