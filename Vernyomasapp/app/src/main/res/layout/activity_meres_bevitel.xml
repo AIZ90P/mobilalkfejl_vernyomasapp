@@ -121,6 +121,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_between_button_button"
         android:backgroundTint="#4CAF50"
+        android:onClick="MeresBevitele"
         android:text="@string/meres_bevitel"
         app:layout_constraintEnd_toEndOf="@+id/tableLayout"
         app:layout_constraintStart_toStartOf="@+id/tableLayout"

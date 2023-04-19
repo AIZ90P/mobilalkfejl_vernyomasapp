@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -21,6 +23,7 @@ import java.util.Date;
 
 public class VernyomasnaploLista extends AppCompatActivity {
 
+    private int SECRET_KEY = 424;
     private FirebaseUser usr;
     private FirebaseFirestore mFirestore;
     private CollectionReference mItems;
@@ -53,6 +56,13 @@ public class VernyomasnaploLista extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        QueryData();
+
+    }
+
     private void QueryData(){
         mItemList.clear();
 
@@ -81,5 +91,11 @@ public class VernyomasnaploLista extends AppCompatActivity {
         }
 
         //mAdapter.notifyDataSetChanged();
+    }
+
+    public void addNew(View view){
+        Intent intent = new Intent(this, MeresBevitel.class);
+        intent.putExtra("SECRET_KEY", SECRET_KEY);
+        startActivity(intent);
     }
 }
