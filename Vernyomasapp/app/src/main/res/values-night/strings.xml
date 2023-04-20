@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Mobilalkfejl_vernyomasapp</string>
     <string name="app_canonical_name">Vérnyomásnapló app</string>
     <string name="email_address">E-mail cím</string>
     <string name="password">Jelszó</string>

@@ -11,6 +11,7 @@
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_between_label_control"
         android:text="@string/MeresModositas_title"
         android:textAlignment="center"
         android:textColor="@color/App_main"
@@ -27,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias=".4">
+        app:layout_constraintVertical_bias="0.35000002">
 
         <TableRow
             android:layout_width="match_parent"

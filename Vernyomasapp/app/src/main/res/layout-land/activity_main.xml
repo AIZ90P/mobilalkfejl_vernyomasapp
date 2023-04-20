@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_between_controls"
+        android:layout_marginTop="@dimen/spacing_between_controls_LS"
         android:text="@string/app_canonical_name"
         android:textAlignment="center"
         android:textColor="@color/App_main"
@@ -31,7 +31,7 @@
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:textColor="@color/App_secondary"
-        android:textColorHint="@color/App_hints"
+        android:textColorHint="@color/App_secondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -46,10 +46,8 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:textColor="@color/App_secondary"
-        android:textColorHint="@color/App_hints"
+        android:textColorHint="@color/App_secondary"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_input" />
 
@@ -78,18 +76,6 @@
         app:layout_constraintStart_toStartOf="@+id/password_input" />
 
     <Button
-        android:id="@+id/login_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_between_button_button"
-        android:backgroundTint="@color/App_main"
-        android:onClick="appLogin"
-        android:text="@string/login_button_text"
-        android:textSize="@dimen/label_fontsize"
-        app:layout_constraintStart_toStartOf="@+id/password_input"
-        app:layout_constraintTop_toBottomOf="@+id/password_input" />
-
-    <Button
         android:id="@+id/register_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -99,6 +85,18 @@
         android:text="@string/register_button_text"
         android:textSize="@dimen/label_fontsize"
         app:layout_constraintEnd_toEndOf="@+id/password_input"
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_between_button_button"
+        android:backgroundTint="@color/App_main"
+        android:onClick="appLogin"
+        android:text="@string/login_button_text"
+        android:textSize="@dimen/label_fontsize"
+        app:layout_constraintStart_toStartOf="@+id/password_input"
         app:layout_constraintTop_toBottomOf="@+id/password_input" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

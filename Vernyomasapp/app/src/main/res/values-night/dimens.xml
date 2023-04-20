@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="spacing_between_controls">72dp</dimen>
+    <dimen name="spacing_between_controls">60dp</dimen>
+    <dimen name="spacing_between_controls_LS">30dp</dimen>
     <dimen name="input_width">320dp</dimen>
     <dimen name="spacing_between_label_control">8dp</dimen>
     <dimen name="spacing_between_button_button">10dp</dimen>
     <dimen name="label_fontsize">16sp</dimen>
     <dimen name="title_label_fontsize">36sp</dimen>
     <dimen name="recyclerMargin">10dp</dimen>
+    <dimen name="recyclerMargin_LS">36dp</dimen>
 </resources>
