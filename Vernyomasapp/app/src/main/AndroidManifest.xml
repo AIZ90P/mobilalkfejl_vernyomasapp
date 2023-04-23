@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Mobilalkfejl_vernyomasapp"
         tools:targetApi="31">
         <activity
+            android:name=".MeresTorles"
+            android:exported="false" />
+        <activity
             android:name=".MeresModositas"
             android:exported="false" />
         <activity

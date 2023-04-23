@@ -117,11 +117,12 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/torles_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_between_button_button"
         android:backgroundTint="#03A9F4"
+        android:onClick="MeresModositasa"
         android:text="@string/meres_modositas"
         app:layout_constraintEnd_toEndOf="@+id/tableLayout"
         app:layout_constraintStart_toStartOf="@+id/tableLayout"

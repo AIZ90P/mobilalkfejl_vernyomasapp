@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".MeresBevitel">
+    tools:context=".MeresTorles"
+    >
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/MeresBevitel_title"
+        android:layout_marginTop="@dimen/spacing_between_label_control"
+        android:text="@string/MeresTorles_title"
         android:textAlignment="center"
         android:textColor="@color/App_main"
         android:textSize="@dimen/title_label_fontsize"
@@ -43,18 +45,15 @@
                 android:textColor="@color/App_main"
                 android:textSize="@dimen/label_fontsize" />
 
-            <EditText
-                android:id="@+id/SYS_DATA"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/SYS_DATA_DELETE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/spacing_between_label_control"
-                android:ems="10"
-                android:hint="@string/SYS"
-                android:inputType="number"
-                android:minHeight="48dp"
-                android:textColor="@color/App_secondary"
-                android:textColorHint="@color/App_hints" />
+                android:text="@string/SYS"
+                android:textColor="#FF0000" />
+
         </TableRow>
 
         <TableRow
@@ -71,18 +70,15 @@
                 android:textColor="@color/App_main"
                 android:textSize="@dimen/label_fontsize" />
 
-            <EditText
-                android:id="@+id/DIA_DATA"
+            <TextView
+                android:id="@+id/DIA_DATA_DELETE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/spacing_between_label_control"
-                android:ems="10"
-                android:hint="@string/DIA"
-                android:inputType="number"
-                android:minHeight="48dp"
-                android:textColor="@color/App_secondary"
-                android:textColorHint="@color/App_hints" />
+                android:text="@string/DIA"
+                android:textColor="#FF0000" />
+
         </TableRow>
 
         <TableRow
@@ -99,18 +95,15 @@
                 android:textColor="@color/App_main"
                 android:textSize="@dimen/label_fontsize" />
 
-            <EditText
-                android:id="@+id/PULSE_DATA"
+            <TextView
+                android:id="@+id/PULSE_DATA_DELETE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/spacing_between_label_control"
-                android:ems="10"
-                android:hint="@string/PULSE"
-                android:inputType="number"
-                android:minHeight="48dp"
-                android:textColor="@color/App_secondary"
-                android:textColorHint="@color/App_hints" />
+                android:text="@string/PULSE"
+                android:textColor="#FF0000" />
+
         </TableRow>
 
     </TableLayout>
@@ -120,9 +113,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_between_button_button"
-        android:backgroundTint="#4CAF50"
-        android:onClick="MeresBevitele"
-        android:text="@string/meres_bevitel"
+        android:backgroundTint="#B71C1C"
+        android:onClick="MeresModositasa"
+        android:text="@string/meres_torles"
         app:layout_constraintEnd_toEndOf="@+id/tableLayout"
         app:layout_constraintStart_toStartOf="@+id/tableLayout"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
