@@ -5,6 +5,9 @@ Várnyomásnapló applikáció
 Ez a projekt egy Vérnyomás monitorozó orvosi alkalmazás, amely lehetővé teszi a pácienseknek a vérnyomásmérő által jelzett értékeket (Szisztolés, valamint Diasztolés vérnyomás, valamint a Pulzus) feljegyezni dátumosan.
 Jellemzően egy nap egyszer kell az embereknek naplóznia, de természetesen többször is mérheti a vérnyomását (csak ekkor már nem kell naplózni), ha úgy gondolja.
 
+## Kérés
+A lekérdezés (és így minden más művelet) az egész adathalmazon tud dolgozni a könnyebb javítás érdekében (hogy lehessen látni adatot, amikor regisztrálsz és még nem vittél be adatot, illetve hogy lehessen módosítani vagy törölni új sor felvitele nélkül). Megkérlek, hogy ha kitöröltél mondjuk 2 sort, akkor vigyél is fel 2-t, hogy más is tudjon ellenőrizni olyan könnyen, mint ahogyan Te is.
+
 ## Mit (nem) tartalmaz a projekt?
 A projekt tartalmazza az értékelési táblázatban található szempontok nagy részét. Az alábbiakban igyekszem segíteni a javítási munkát, hogy ne kelljen sokáig keresni a megvalósításokat.
 
