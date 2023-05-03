@@ -41,7 +41,7 @@
         android:layout_marginBottom="32dp"
         android:clickable="true"
         android:foreground="@drawable/plus"
-        android:foregroundTintMode="multiply"
+        android:foregroundTintMode="add"
         android:onClick="addNew"
         app:backgroundTint="#2E7D32"
         app:fabSize="mini"

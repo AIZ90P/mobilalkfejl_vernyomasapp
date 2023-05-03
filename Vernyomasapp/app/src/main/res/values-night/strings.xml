@@ -14,4 +14,8 @@
     <string name="MeresBevitel_title">Új mérés</string>
     <string name="meres_bevitel">Bevitel</string>
     <string name="MeresModositas_title">Módosítás</string>
+    <string name="MeresTorles_title">Mérés törlésének megerősítése</string>
+    <string name="MeresTorles_message">Biztosan törölni szeretné a mérést?</string>
+    <string name="POSITIVE_ANS">Igen</string>
+    <string name="NEGATIVE_ANS">Nem</string>
 </resources>
